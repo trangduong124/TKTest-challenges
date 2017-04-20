@@ -7,7 +7,7 @@ import { LobbyPage } from '../pages/lobby-page/lobby-page';
 import { MyApp } from './app.component';
 import { QuestionPage } from '../pages/question-page/question-page';
 
-let injections: any[] = [MyApp, LobbyPage];
+let injections: any[] = [MyApp, QuestionPage, LobbyPage];
 
 @NgModule({
   declarations: injections,

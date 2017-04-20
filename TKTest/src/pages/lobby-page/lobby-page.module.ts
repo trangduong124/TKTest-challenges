@@ -4,7 +4,7 @@ import { LobbyPage } from './lobby-page';
 
 @NgModule({
   declarations: [
-    LobbyPage,
+    LobbyPage
   ],
   imports: [
     IonicPageModule.forChild(LobbyPage),
