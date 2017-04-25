@@ -12,24 +12,23 @@
 
 </ion-header>
 
-
 <ion-content padding>
-<ion-slides pager>
-  <ion-slide>
-    <ion-card>
+<ion-slides pager paginationType="fraction">
+  <ion-slide *ngFor="let question of questions">
+    <ion-card (click)="nextSlide()">
       <ion-card-header>
-        Option {{"A"}}
+        Option {{question.A.Answer_ID}}
       </ion-card-header>
       <ion-card-content>
-        {{"Sometext about something or another A. "}}
+        {{question.A.Text}}
       </ion-card-content>
     </ion-card>
-    <ion-card>
+    <ion-card (click)="nextSlide()">
     <ion-card-header>
-      Option {{"B"}}
+      Option {{question.B.Answer_ID}}
     </ion-card-header>
     <ion-card-content>
-      {{"Some text about something or another B. "}}
+      {{question.B.Text}}
     </ion-card-content>
     </ion-card>
   </ion-slide>
