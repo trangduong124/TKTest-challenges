@@ -7,7 +7,7 @@
 <ion-header>
 
   <ion-navbar color = "primary" text-center>
-    <ion-title>QuestionPage</ion-title>
+    <ion-title>Question Page</ion-title>
   </ion-navbar>
 
 </ion-header>
@@ -15,7 +15,7 @@
 <ion-content padding>
 <ion-slides pager paginationType="fraction">
   <ion-slide *ngFor="let question of questions">
-    <ion-card (click)="nextSlide()">
+    <ion-card (click)="nextSlide(question.A)">
       <ion-card-header>
         Option {{question.A.Answer_ID}}
       </ion-card-header>
@@ -23,7 +23,7 @@
         {{question.A.Text}}
       </ion-card-content>
     </ion-card>
-    <ion-card (click)="nextSlide()">
+    <ion-card (click)="nextSlide(question.B)">
     <ion-card-header>
       Option {{question.B.Answer_ID}}
     </ion-card-header>
