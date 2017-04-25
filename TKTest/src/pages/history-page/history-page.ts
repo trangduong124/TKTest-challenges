@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-// import { QuestionPage } from '../question-page/question-page'
+import { ResultsPage } from  '../results-page/results-page';
+
 /**
  * Generated class for the HistoryPage page.
  *
@@ -23,8 +24,13 @@ export class HistoryPage {
   ionViewDidLoad() {
     
     console.log('ionViewDidLoad HistoryPage');
-    this.tests =JSON.parse(window.localStorage.getItem("tests")) || [];
+    this.tests = JSON.parse(window.localStorage.getItem("tests")) || [];
     console.log(this.tests);
+  }
+  goToResults(test) {
+    this.navCtrl.push(ResultsPage, {
+      test: test
+    });
   }
 
 }
