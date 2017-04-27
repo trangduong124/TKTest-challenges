@@ -7,7 +7,7 @@ import { LobbyPage } from '../pages/lobby-page/lobby-page';
 import { MyApp } from './app.component';
 import { QuestionPage } from '../pages/question-page/question-page';
 import { HistoryPage } from '../pages/history-page/history-page';
-import { ResultsPage } from '../pages/results-page/results-page'
+import { ResultsPage } from '../pages/results-page/results-page';
 
 let injections: any[] = [MyApp, QuestionPage, LobbyPage, HistoryPage, ResultsPage];
 
